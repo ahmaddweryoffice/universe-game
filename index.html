@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' blob:; style-src 'self' blob:; img-src blob: data:; media-src blob:; font-src blob:; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="theme-color" content="#1c1024">
+  <title>A private invitation</title>
+  <link rel="stylesheet" href="unlock.css">
+</head>
+<body>
+  <main class="unlock" id="gate">
+    <div class="gate-stars" aria-hidden="true">✦ · ✧ · ✦</div>
+    <p class="eyebrow">JUST FOR YOU</p>
+    <h1>A little world<br>is waiting.</h1>
+    <p class="gate-intro">Scan your ticket to step inside,<br>or enter your invitation key.</p>
+    <form id="unlock-form">
+      <label for="invitation-key">Invitation key</label>
+      <input id="invitation-key" name="key" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" required aria-describedby="unlock-status">
+      <button type="submit" id="unlock-button">Unlock ✦</button>
+    </form>
+    <p id="unlock-status" role="status" aria-live="polite"></p>
+    <p class="gate-foot">One invitation. One little adventure.</p>
+  </main>
+  <script type="module" src="unlock.mjs"></script>
+</body>
+</html>
